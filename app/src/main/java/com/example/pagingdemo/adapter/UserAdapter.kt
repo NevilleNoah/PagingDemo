@@ -34,6 +34,4 @@ class UserAdapter : PagingDataAdapter<User, UserViewHolder>(diffCallback) { // d
 
         }
     }
-
-
 }

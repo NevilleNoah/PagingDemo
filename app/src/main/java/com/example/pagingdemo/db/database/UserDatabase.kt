@@ -4,13 +4,8 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import androidx.sqlite.db.SupportSQLiteDatabase
 import com.example.pagingdemo.db.dao.UserDao
 import com.example.pagingdemo.db.entity.User
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
-import java.util.concurrent.Executor
 
 @Database(entities = [User::class], version = 1)
 abstract class UserDatabase : RoomDatabase() {
@@ -42,9 +37,3 @@ abstract class UserDatabase : RoomDatabase() {
 
     }
 }
-
-
-
-/*
-private val USER_DATA = arrayListOf(
-    "Abbaye de Belloc", "Abbaye du Mont des Cats")*/

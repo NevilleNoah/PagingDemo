@@ -16,11 +16,6 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        kapt {
-            arguments {
-                arg("room.incremental", true)
-            }
-        }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -41,7 +36,6 @@ android {
 dependencies {
 
     implementation deps.constraintlayout
-
     implementation deps.app_compat
     implementation deps.fragment.runtime_ktx
     implementation deps.recyclerview
